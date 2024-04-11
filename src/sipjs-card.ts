@@ -355,7 +355,7 @@ class SipJsCard extends LitElement {
                         </ha-header-bar>
                     </div>
                     <div class="content"> 
-                        ${this.currentCamera !== undefined ? html`
+                        ${this.currentCamera ? html`
                             <ha-camera-stream
                                 allow-exoplayer
                                 muted
