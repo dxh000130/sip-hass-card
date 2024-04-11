@@ -607,7 +607,7 @@ class SipJsCard extends LitElement {
     }
 
     async _answer() {
-        this.sipPhoneSession?.answer();
+        this.sipPhoneSession?.answer(this.sipCallOptions);
     }
 
     async _hangup() {
